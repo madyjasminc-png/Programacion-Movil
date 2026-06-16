@@ -16,7 +16,7 @@ Actualmente nos encontramos en el **Sprint 0** (Definición y Diseño Conceptual
 
 ### Sprint 1: Fundamentos del Backend y Frontend (15% completado)
 * [x] Configuración del servidor base y entorno de Node.js / Express
-* [ ] Conexión a la base de datos MySQL e inicialización de tablas
+* [x] Conexión a la base de datos MySQL e inicialización de tablas
 * [x] Inicialización del proyecto web con React y Capacitor
 * [ ] Implementación de la paleta de colores y tokens de diseño globales (Frontend)
 * [ ] Módulo de Autenticación de Usuarios (API: Registro, Login, JWT)
