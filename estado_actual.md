@@ -2,7 +2,7 @@
 
 Este documento detalla el estado actual del desarrollo de la aplicación HabitZone, desglosando las funcionalidades principales en **Sprints** de trabajo ágil (Scrum) y su porcentaje de avance estimado.
 
-## Progreso Global del Proyecto: 5%
+## Progreso Global del Proyecto: 45%
 
 Actualmente nos encontramos en el **Sprint 0** (Definición y Diseño Conceptual).
 
@@ -14,13 +14,13 @@ Actualmente nos encontramos en el **Sprint 0** (Definición y Diseño Conceptual
 * [x] Diseño del Esquema de Base de Datos MySQL (DER)
 * [x] Arquitectura de rutas para la API REST
 
-### Sprint 1: Fundamentos del Backend y Frontend (15% completado)
+### Sprint 1: Fundamentos del Backend y Frontend (100% completado)
 * [x] Configuración del servidor base y entorno de Node.js / Express
 * [x] Conexión a la base de datos MySQL e inicialización de tablas
 * [x] Inicialización del proyecto web con React y Capacitor
-* [ ] Implementación de la paleta de colores y tokens de diseño globales (Frontend)
+* [x] Implementación de la paleta de colores y tokens de diseño globales (Frontend)
 * [x] Módulo de Autenticación de Usuarios (API: Registro, Login, JWT)
-* [ ] Maquetación: Pantallas de Onboarding y Bienvenida (Frontend)
+* [x] Maquetación: Pantallas de Onboarding y Bienvenida (Frontend)
 
 ### Sprint 2: Core de la Aplicación y Retos (0% completado)
 * [ ] CRUD de Retos y Ejercicios Diarios (Backend)
