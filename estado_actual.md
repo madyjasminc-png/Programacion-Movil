@@ -19,7 +19,7 @@ Actualmente nos encontramos en el **Sprint 0** (Definición y Diseño Conceptual
 * [x] Conexión a la base de datos MySQL e inicialización de tablas
 * [x] Inicialización del proyecto web con React y Capacitor
 * [ ] Implementación de la paleta de colores y tokens de diseño globales (Frontend)
-* [ ] Módulo de Autenticación de Usuarios (API: Registro, Login, JWT)
+* [x] Módulo de Autenticación de Usuarios (API: Registro, Login, JWT)
 * [ ] Maquetación: Pantallas de Onboarding y Bienvenida (Frontend)
 
 ### Sprint 2: Core de la Aplicación y Retos (0% completado)

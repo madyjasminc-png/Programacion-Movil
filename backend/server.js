@@ -20,9 +20,9 @@ app.get('/api/v1/health', (req, res) => {
   });
 });
 
-// TODO: Importar rutas de módulos (Auth, Challenges, Progress, Community)
-// const authRoutes = require('./routes/auth');
-// app.use('/api/v1/auth', authRoutes);
+// Importar rutas de módulos (Auth)
+const authRoutes = require('./routes/auth');
+app.use('/api/v1/auth', authRoutes);
 
 // Arranque del Servidor
 app.listen(PORT, () => {
