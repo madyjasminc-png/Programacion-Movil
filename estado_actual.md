@@ -23,7 +23,8 @@ Actualmente nos encontramos en el **Sprint 0** (Definición y Diseño Conceptual
 * [x] Maquetación: Pantallas de Onboarding y Bienvenida (Frontend)
 
 ### Sprint 2: Core de la Aplicación y Retos (0% completado)
-* [ ] CRUD de Retos y Ejercicios Diarios (Backend)
+*(Ver historias de usuario y tareas detalladas en [sprint2_backlog.md](./sprint2_backlog.md))*
+* [x] CRUD de Retos y Ejercicios Diarios (Backend)
 * [ ] Maquetación: Pantalla "Descubrir Hub" (Buscador y Retos destacados) (Frontend)
 * [ ] Integración de peticiones HTTP con la API para listar retos
 * [ ] Sistema de Registro de Progreso y Estadísticas (Backend)
