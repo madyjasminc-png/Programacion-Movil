@@ -6,7 +6,7 @@ const db = require('../config/db');
 exports.getChallenges = async (req, res) => {
   try {
     const { category } = req.query;
-    
+
     let query = 'SELECT * FROM challenges ORDER BY created_at DESC';
     let params = [];
 
