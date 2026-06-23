@@ -1,0 +1,150 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: var(--color-background-paper);
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.difficulty-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+.difficulty-badge.easy { background: #d1fae5; color: #065f46; }
+.difficulty-badge.medium { background: #fef3c7; color: #92400e; }
+.difficulty-badge.hard { background: #fee2e2; color: #991b1b; }
+
+.challenge-instructions {
+  background: var(--color-background);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.recording-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.record-btn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.record-btn:hover {
+  transform: scale(1.05);
+}
+
+.record-btn.stop {
+  background: #dc2626;
+  animation: pulse 1.5s infinite;
+}
+
+.recording-indicator {
+  margin-top: 1rem;
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.audio-player audio {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.success-state {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.success-state h2 {
+  color: #059669;
+  margin-bottom: 1rem;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

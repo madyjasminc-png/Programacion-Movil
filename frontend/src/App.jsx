@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Onboarding from './pages/Onboarding';
+import DiscoverHub from './pages/DiscoverHub';
+import JourneyMap from './pages/JourneyMap';
+import CommunityProfile from './pages/CommunityProfile';
+import Navigation from './components/Navigation';
 import './App.css';
 
 function App() {
-  // Estado para controlar si mostramos el Onboarding o la app principal
   const [showOnboarding, setShowOnboarding] = useState(true);
 
   const finishOnboarding = () => {
@@ -11,18 +15,25 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      {showOnboarding ? (
-        <Onboarding onFinish={finishOnboarding} />
-      ) : (
-        <div style={{ padding: '2rem', textAlign: 'center', display: 'flex', flexDirection: 'column', height: '100vh', justifyContent: 'center' }}>
-          <h2>🎉 ¡Bienvenido al Hub de Descubrimiento!</h2>
-          <p style={{ marginTop: '1rem', color: 'var(--color-text-muted)' }}>
-            Esta será tu pantalla principal con el buscador y los retos diarios.
-          </p>
-        </div>
-      )}
-    </div>
+    <Router>
+      <div className="app-container">
+        {showOnboarding ? (
+          <Onboarding onFinish={finishOnboarding} />
+        ) : (
+          <>
+            <div style={{ paddingBottom: '60px' }}> {/* Space for bottom nav */}
+              <Routes>
+                <Route path="/" element={<Navigate to="/hub" />} />
+                <Route path="/hub" element={<DiscoverHub />} />
+                <Route path="/journey" element={<JourneyMap />} />
+                <Route path="/community" element={<CommunityProfile />} />
+              </Routes>
+            </div>
+            <Navigation />
+          </>
+        )}
+      </div>
+    </Router>
   );
 }
 

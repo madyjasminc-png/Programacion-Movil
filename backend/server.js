@@ -23,12 +23,20 @@ app.get('/api/v1/health', (req, res) => {
 // Importar rutas de módulos (Auth y Challenges)
 const authRoutes = require('./routes/auth');
 const challengeRoutes = require('./routes/challenges');
+const progressRoutes = require('./routes/progress');
+const communityRoutes = require('./routes/community');
 
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/challenges', challengeRoutes);
+app.use('/api/v1/progress', progressRoutes);
+app.use('/api/v1/community', communityRoutes);
 
 // Arranque del Servidor
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor de HabitZone corriendo en http://localhost:${PORT}`);
-  console.log(`🩺 Health check disponible en http://localhost:${PORT}/api/v1/health`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Servidor de HabitZone corriendo en http://localhost:${PORT}`);
+    console.log(`🩺 Health check disponible en http://localhost:${PORT}/api/v1/health`);
+  });
+}
+
+module.exports = app;
